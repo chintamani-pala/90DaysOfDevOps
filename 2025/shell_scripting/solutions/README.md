@@ -1,24 +1,32 @@
 # Week 3: Shell Scripting Challenges - Solutions
 
-This folder contains the solutions for the Week 3 Shell Scripting challenges. Each part of the challenge has its own documentation and standalone script.
+Welcome to the solutions for Week 3 of the **90 Days of DevOps - 2025 Edition**. This directory contains the complete executable scripts and granular documentation for the shell scripting challenges.
 
-## 📁 Challenge 1: User Account Management
-This challenge covers creating, deleting, and managing users, along with help documentation.
+## 🚀 Primary Scripts (Consolidated)
 
-1.  **[Task 1: Account Creation](./Task1.md)** | [Script](./Task1.sh)
-2.  **[Task 2: Account Deletion](./Task2.md)** | [Script](./Task2.sh)
-3.  **[Task 3: Password Reset](./Task3.md)** | [Script](./Task3.sh)
-4.  **[Task 4: List User Accounts](./Task4.md)** | [Script](./Task4.sh)
-5.  **[Task 5: Help & Usage](./Task5.md)** | [Script](./Task5.sh)
+These are the final submission-ready scripts as described in the challenge:
 
-## 📁 Challenge 2: Backup & Recovery
-This challenge covers automated directory backups with a rotation policy.
-
-6.  **[Task 6: Backup with Rotation](./Task6.md)** | [Script](./Task6.sh)
+1.  **[user_management.sh](./user_management.sh)**: A comprehensive script for IAM tasks.
+    *   **Usage**: `./user_management.sh [OPTION]` where options include `-c` (create), `-d` (delete), `-r` (reset), `-l` (list), and `-h` (help).
+2.  **[backup_with_rotation.sh](./backup_with_rotation.sh)**: Automated directory backup script.
+    *   **Usage**: `./backup_with_rotation.sh /path/to/directory` (Maintains only the last 3 backups).
 
 ---
 
-### Implementation Note
-Each `.sh` file is a standalone script for that specific part. For a production-ready tool, these would typically be combined into a single script using a `case` statement to handle the different flags mentioned in the challenge description.
+## 📁 Granular Documentation (Part-by-Part)
+
+Click on the links below to see the logic and DevOps relevance for each individual part:
+
+*   **[Part 1: Account Creation](./Task1.md)**
+*   **[Part 2: Account Deletion](./Task2.md)**
+*   **[Part 3: Password Reset](./Task3.md)**
+*   **[Part 4: List User Accounts](./Task4.md)**
+*   **[Part 5: Help & Usage Info](./Task5.md)**
+*   **[Challenge 2: Backup Rotation](./Task6.md)**
+
+---
+
+### Why Shell Scripting matters for DevOps?
+Shell scripting is the "glue" that holds DevOps pipelines together. From automating environment configuration to managing user access and disaster recovery (backups), mastering Bash allows you to scale human effort through machine precision and speed.
 
 Happy Scripting! 💻
